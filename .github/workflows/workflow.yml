@@ -43,5 +43,5 @@ jobs:
           echo test, and deploy your project.
           sudo apt update
           sudo apt install nginx
-
+          curl http://127.0.0.1
 
