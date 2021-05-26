@@ -1,2 +1,2 @@
 # kr
-static page
+static page running on EC2 with NGINX
