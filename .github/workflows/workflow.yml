@@ -30,7 +30,7 @@ jobs:
         with:
           aws-access-key-id:${{ secrets.KR_AWS_ACCESS_KEY_ID }}
           aws-secret-access-key:${{ secrets.KR_AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-2
+          aws-region:us-east-2
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
@@ -43,5 +43,5 @@ jobs:
           echo test, and deploy your project.
           apt update
           apt install nginx
-          
+
 
