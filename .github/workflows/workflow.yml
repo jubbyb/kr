@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  ci:
+  continuous-integration:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -46,7 +46,7 @@ jobs:
           sudo service nginx start
           curl http://127.0.0.1 
 
-  cd:
+  continuous-deployment:
     runs-on: ubuntu-latest
     needs: [continuous-integration]
     if: github.ref == 'refs/heads/main'
